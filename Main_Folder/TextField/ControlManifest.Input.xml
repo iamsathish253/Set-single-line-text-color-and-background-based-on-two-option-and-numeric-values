@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="TextField" constructor="TextField" version="0.0.1" display-name-key="TextField" description-key="TextField description" control-type="standard">
+    <external-service-usage enabled="false"/>
+    
+    <!-- Property for the Single Line Text field -->
+    <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    
+    <!-- Property for the Two Option Set field to toggle color -->
+    <property name="toggleColor" display-name-key="Toggle_Color_Display_Key" description-key="Toggle_Color_Desc_Key" of-type="TwoOptions" usage="bound" required="false" />
+    
+    <!-- Property for the Number field -->
+    <property name="sampleNumber" display-name-key="Number_Display_Key" description-key="Number_Desc_Key" of-type="Whole.None" usage="bound" required="false" />
+    
+    <!-- Property for the read-only flag -->
+    <property name="readOnlyFlag" display-name-key="ReadOnly_Flag_Display_Key" description-key="ReadOnly_Flag_Desc_Key" of-type="SingleLine.Text" usage="input" required="false"/>
+    
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/style.css" order="1"/>
+    </resources>
+  </control>
+</manifest>
